@@ -18,6 +18,7 @@ import javax.persistence.Table;
             query = "SELECT m FROM Task AS m ORDER BY m.id DESC"
             )
 })
+
 @Table(name = "tasks")
 public class Task {
     @Id
@@ -41,6 +42,7 @@ public class Task {
     public void setId(Integer id) {
         this.id = id;
     }
+
 
     public String getContent() {
         return content;
